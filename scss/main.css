@@ -1,0 +1,2163 @@
+/*
+    SMASCSS v3.0.1
+    Scalable and Modular Architecture for Sassy CSS
+*/
+/*
+  This file is used to contain all vendor imports.
+*/
+/*
+This file is used to contain all abstracts imports.
+Files inside this folder can contain abstract settings, helpers or functions. They have no direct output.
+*/
+/* 
+    How to use:
+
+
+
+
+
+*/
+select,
+input,
+button,
+optgroup,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.2;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Charcoal: #383838;
+  --Charcoal-100: #c3c3c3;
+  --Charcoal-300: #747474;
+  --Charcoal-700: #272727;
+  --Charcoal-900: #111111;
+  --Cherry: #D85537;
+  --Cherry-100: #f3ccc3;
+  --Cherry-300: #e48873;
+  --Cherry-700: #973c27;
+  --Cherry-900: #411a11;
+  --Mango: #FFE197;
+  --Mango-100: #fff6e0;
+  --Mango-300: #ffeab6;
+  --Mango-700: #b39e6a;
+  --Mango-900: #4d442d;
+  --Ocean: #0B7492;
+  --Ocean-100: #b6d5de;
+  --Ocean-300: #549eb3;
+  --Ocean-700: #085166;
+  --Ocean-900: #03232c;
+  --LightCharcoal: #606060;
+  --LightCherry: #FF9881;
+  --LightOcean: #68ACBF;
+  --LightMango: #FFF1CE;
+  --NeutralGray: #A4A4A4;
+  --NeutralAsh: #E1DFDF;
+  --NeutralCherry: #FFEDE9;
+  --NeutralOcean: #DDF9FB;
+  --NeutralMango: #FBF8DD;
+  --White: #FFFFFF;
+  --Light: #f8f8f8;
+  --Medium: #92949c;
+  --Dark: #2c2c2c;
+  --Black: #000000;
+  --Success: #2fd12f;
+  --Warning: #eca622;
+  --Danger: #da1d1d;
+  --Info: #0cd1e8;
+}
+
+.bg-Charcoal {
+  background-color: #383838;
+}
+
+.text-Charcoal {
+  color: #383838;
+}
+
+.bg-Charcoal-100 {
+  background-color: #c3c3c3;
+}
+
+.text-Charcoal-100 {
+  color: #c3c3c3;
+}
+
+.bg-Charcoal-300 {
+  background-color: #747474;
+}
+
+.text-Charcoal-300 {
+  color: #747474;
+}
+
+.bg-Charcoal-700 {
+  background-color: #272727;
+}
+
+.text-Charcoal-700 {
+  color: #272727;
+}
+
+.bg-Charcoal-900 {
+  background-color: #111111;
+}
+
+.text-Charcoal-900 {
+  color: #111111;
+}
+
+.bg-Cherry {
+  background-color: #D85537;
+}
+
+.text-Cherry {
+  color: #D85537;
+}
+
+.bg-Cherry-100 {
+  background-color: #f3ccc3;
+}
+
+.text-Cherry-100 {
+  color: #f3ccc3;
+}
+
+.bg-Cherry-300 {
+  background-color: #e48873;
+}
+
+.text-Cherry-300 {
+  color: #e48873;
+}
+
+.bg-Cherry-700 {
+  background-color: #973c27;
+}
+
+.text-Cherry-700 {
+  color: #973c27;
+}
+
+.bg-Cherry-900 {
+  background-color: #411a11;
+}
+
+.text-Cherry-900 {
+  color: #411a11;
+}
+
+.bg-Mango {
+  background-color: #FFE197;
+}
+
+.text-Mango {
+  color: #FFE197;
+}
+
+.bg-Mango-100 {
+  background-color: #fff6e0;
+}
+
+.text-Mango-100 {
+  color: #fff6e0;
+}
+
+.bg-Mango-300 {
+  background-color: #ffeab6;
+}
+
+.text-Mango-300 {
+  color: #ffeab6;
+}
+
+.bg-Mango-700 {
+  background-color: #b39e6a;
+}
+
+.text-Mango-700 {
+  color: #b39e6a;
+}
+
+.bg-Mango-900 {
+  background-color: #4d442d;
+}
+
+.text-Mango-900 {
+  color: #4d442d;
+}
+
+.bg-Ocean {
+  background-color: #0B7492;
+}
+
+.text-Ocean {
+  color: #0B7492;
+}
+
+.bg-Ocean-100 {
+  background-color: #b6d5de;
+}
+
+.text-Ocean-100 {
+  color: #b6d5de;
+}
+
+.bg-Ocean-300 {
+  background-color: #549eb3;
+}
+
+.text-Ocean-300 {
+  color: #549eb3;
+}
+
+.bg-Ocean-700 {
+  background-color: #085166;
+}
+
+.text-Ocean-700 {
+  color: #085166;
+}
+
+.bg-Ocean-900 {
+  background-color: #03232c;
+}
+
+.text-Ocean-900 {
+  color: #03232c;
+}
+
+.bg-LightCharcoal {
+  background-color: #606060;
+}
+
+.text-LightCharcoal {
+  color: #606060;
+}
+
+.bg-LightCherry {
+  background-color: #FF9881;
+}
+
+.text-LightCherry {
+  color: #FF9881;
+}
+
+.bg-LightOcean {
+  background-color: #68ACBF;
+}
+
+.text-LightOcean {
+  color: #68ACBF;
+}
+
+.bg-LightMango {
+  background-color: #FFF1CE;
+}
+
+.text-LightMango {
+  color: #FFF1CE;
+}
+
+.bg-NeutralGray {
+  background-color: #A4A4A4;
+}
+
+.text-NeutralGray {
+  color: #A4A4A4;
+}
+
+.bg-NeutralAsh {
+  background-color: #E1DFDF;
+}
+
+.text-NeutralAsh {
+  color: #E1DFDF;
+}
+
+.bg-NeutralCherry {
+  background-color: #FFEDE9;
+}
+
+.text-NeutralCherry {
+  color: #FFEDE9;
+}
+
+.bg-NeutralOcean {
+  background-color: #DDF9FB;
+}
+
+.text-NeutralOcean {
+  color: #DDF9FB;
+}
+
+.bg-NeutralMango {
+  background-color: #FBF8DD;
+}
+
+.text-NeutralMango {
+  color: #FBF8DD;
+}
+
+.bg-White {
+  background-color: #FFFFFF;
+}
+
+.text-White {
+  color: #FFFFFF;
+}
+
+.bg-Light {
+  background-color: #f8f8f8;
+}
+
+.text-Light {
+  color: #f8f8f8;
+}
+
+.bg-Medium {
+  background-color: #92949c;
+}
+
+.text-Medium {
+  color: #92949c;
+}
+
+.bg-Dark {
+  background-color: #2c2c2c;
+}
+
+.text-Dark {
+  color: #2c2c2c;
+}
+
+.bg-Black {
+  background-color: #000000;
+}
+
+.text-Black {
+  color: #000000;
+}
+
+.bg-Success {
+  background-color: #2fd12f;
+}
+
+.text-Success {
+  color: #2fd12f;
+}
+
+.bg-Warning {
+  background-color: #eca622;
+}
+
+.text-Warning {
+  color: #eca622;
+}
+
+.bg-Danger {
+  background-color: #da1d1d;
+}
+
+.text-Danger {
+  color: #da1d1d;
+}
+
+.bg-Info {
+  background-color: #0cd1e8;
+}
+
+.text-Info {
+  color: #0cd1e8;
+}
+
+/*
+  This file is used to contain all base imports.
+  Files inside this folder can contain global styles used in the project.
+*/
+/*  Global Resets */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+fieldset {
+  padding: 0;
+}
+
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+img {
+  border-style: none;
+}
+
+textarea {
+  overflow: auto;
+}
+
+select,
+input {
+  text-transform: none;
+}
+
+input[type='search'] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+  outline-offset: -2px;
+}
+
+button {
+  border-style: none;
+  text-transform: none;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  padding: 0;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* 
+    Set default global styles for button elements:
+    <button></button>, input[type="submit"], btn btn-submit
+*/
+.button,
+button {
+  cursor: pointer;
+}
+
+.button:disabled,
+button:disabled, .disabled.button,
+button.disabled {
+  pointer-events: none;
+}
+
+.button,
+button {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px 80px;
+  font-size: 16px;
+  margin: 16px 16px;
+  outline-style: none;
+}
+
+.btn-Charcoal {
+  background-color: #383838;
+  color: white;
+}
+
+.btn-Charcoal:hover {
+  background-color: #565656;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-Charcoal:active {
+  background-color: #303030;
+}
+
+.btn-Cherry {
+  background-color: #D85537;
+  color: white;
+}
+
+.btn-Cherry:hover {
+  background-color: #de6f55;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-Cherry:active {
+  background-color: #b8482f;
+}
+
+.btn-Ocean {
+  background-color: #0B7492;
+  color: white;
+}
+
+.btn-Ocean:hover {
+  background-color: #3089a2;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-Ocean:active {
+  background-color: #09637c;
+}
+
+.btn-Mango {
+  background-color: #FFE197;
+  color: white;
+}
+
+.btn-Mango:hover {
+  background-color: #ffe6a7;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-Mango:active {
+  background-color: #d9bf80;
+}
+
+.btn-outline-Charcoal-sm {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding: 3px 24px;
+  border: 1px solid #383838;
+  background-color: transparent;
+  font-weight: 500;
+  color: #383838;
+}
+
+.btn-outline-Charcoal-sm:hover {
+  border: 1px solid #D85537;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-Charcoal-sm:active {
+  color: #FFFFFF;
+  background-color: #ad442c;
+}
+
+.btn-outline-Charcoal {
+  border: 1px solid #383838;
+  background-color: transparent;
+  font-weight: 500;
+  color: #383838;
+}
+
+.btn-outline-Charcoal:hover {
+  background-color: #ebebeb;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-Charcoal:active {
+  background-color: #d7d7d7;
+}
+
+.btn-outline-Cherry {
+  border: 2px solid #D85537;
+  background-color: transparent;
+  font-weight: 600;
+  color: #D85537;
+}
+
+.btn-outline-Cherry:hover {
+  background-color: #fbeeeb;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-Cherry:active {
+  background-color: #f7ddd7;
+}
+
+.btn-outline-Ocean {
+  border: 2px solid #0B7492;
+  background-color: transparent;
+  font-weight: 600;
+  color: #0B7492;
+}
+
+.btn-outline-Ocean:hover {
+  background-color: #e7f1f4;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-Ocean:active {
+  background-color: #cee3e9;
+}
+
+.btn-outline-Mango {
+  border: 2px solid #FFE197;
+  background-color: transparent;
+  font-weight: 600;
+  color: #FFE197;
+}
+
+.btn-outline-Mango:hover {
+  background-color: #fffcf5;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-Mango:active {
+  background-color: #fff9ea;
+}
+
+.txt-btn {
+  font-weight: 600;
+}
+
+.a-txt-Charcoal {
+  color: #383838;
+}
+
+.a-txt-Charcoal:hover {
+  color: #D85537;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.a-txt-Charcoal:active {
+  color: #565656;
+}
+
+.a-txt-Cherry {
+  color: #D85537;
+}
+
+.a-txt-Cherry:hover {
+  color: #383838;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.a-txt-Cherry:active {
+  color: #de6f55;
+}
+
+.a-txt-Ocean {
+  color: #0B7492;
+}
+
+.a-txt-Ocean:hover {
+  color: #D85537;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.a-txt-Ocean:active {
+  color: #3089a2;
+}
+
+.a-txt-Mango {
+  color: #FFE197;
+}
+
+.a-txt-Mango:hover {
+  color: #D85537;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.a-txt-Mango:active {
+  color: #ffe6a7;
+}
+
+/* General Typography Rules */
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Headings */
+h1.uppercase,
+h2.uppercase,
+h3.uppercase,
+h4.uppercase,
+h5.uppercase,
+h6.uppercase {
+  text-transform: uppercase;
+}
+
+h1.light,
+h2.light,
+h3.light,
+h4.light,
+h5.light,
+h6.light {
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 3.25em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2.75em;
+}
+
+h4 {
+  font-size: 2.5em;
+}
+
+h5 {
+  font-size: 2.25em;
+}
+
+h6 {
+  font-size: 2em;
+}
+
+.section-heading {
+  margin-bottom: 24px;
+}
+
+/* 
+    Set default style for footer:
+    e.g. <footer></footer>, .footer
+*/
+/* 
+    Set default global styles for inputs elements:
+    e.g. select, input[type="text"], input[type="email"], input[type="number"]
+*/
+/* 
+    Set default global styles for list elements:
+    e.g. ul, ol, li
+*/
+ul,
+li,
+ol {
+  font-size: 14px;
+  font-weight: 400;
+  list-style: none;
+  margin: auto 0;
+  padding: 0;
+}
+
+/* 
+    Set default global styles for: 
+    Images, Videos, iFrame, SVG assets, Figures 
+*/
+/* 
+    Set default global style for table element:
+    e.g. <table></table>, .table
+*/
+/*
+  This file is used to contain all component imports.
+  Files inside this folder can contain specific element styles and layout. 
+*/
+/* 
+    Set wrapper properties:
+    e.g. .wrapper, .main-wrapper
+*/
+.global-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1250px;
+  padding: 0 32px;
+}
+
+@media (max-width: 992px) {
+  .global-wrapper {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .global-wrapper {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .global-wrapper {
+    padding: 0 16px;
+  }
+}
+
+.global-wrapper.section-padding {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+@media (max-width: 1200px) {
+  .global-wrapper.section-padding {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+@media (max-width: 992px) {
+  .global-wrapper.section-padding {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .global-wrapper.section-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .global-wrapper.section-padding {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media (max-width: 376px) {
+  .global-wrapper.section-padding {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+/*
+  This file is used to contain all component imports.
+  Files inside this folder should contain all styles relating to a reusable component.
+*/
+/* 
+    Set default global styles for: 
+    Navigation <nav></nav>
+*/
+.nav-top {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.nav-top .nav-top-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-top .nav-top-menu a {
+  padding-left: 4px;
+}
+
+.nav-top .nav-top-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-top .nav-top-user li {
+  padding-left: 16px;
+}
+
+.nav-top i {
+  font-size: 19px;
+  padding-left: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.nav-main {
+  color: white;
+  height: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-main .branding {
+  font-size: 32px;
+  font-weight: 500;
+  padding-right: 30px;
+}
+
+.nav-main .search-bar {
+  margin: 0 auto;
+  background-color: gray;
+  width: 100%;
+  position: relative;
+}
+
+.nav-main .search-bar .search {
+  background-color: red;
+  width: 100%;
+  height: 70%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-main .search-bar .search .search-term {
+  margin: auto;
+  margin-right: 0;
+  height: 24px;
+  width: 100%;
+  padding: 14px;
+  outline: none;
+  color: #747474;
+}
+
+.nav-main .search-bar .search .search-term:focus {
+  color: #383838;
+}
+
+.nav-main .search-bar .search .btn-search {
+  width: px;
+  height: 36px;
+  background: #383838;
+  text-align: center;
+  border: 2px solid white;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.nav-main .search-bar .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-main .search-bar .categories li {
+  padding-right: 16px;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  max-width: 1200px;
+}
+
+.column.left {
+  width: 230px;
+}
+
+.column.right {
+  width: 230px;
+  border-left: 1px solid #eee;
+}
+
+.column.center {
+  border-left: 1px solid #eee;
+}
+
+/*
+This file is used to contain all abstracts imports.
+Files inside this folder can contain abstract settings, helpers or functions. They have no direct output.
+*/
+/* 
+    How to use:
+
+
+
+
+
+*/
+select,
+input,
+button,
+optgroup,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.2;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Charcoal: #383838;
+  --Charcoal-100: #c3c3c3;
+  --Charcoal-300: #747474;
+  --Charcoal-700: #272727;
+  --Charcoal-900: #111111;
+  --Cherry: #D85537;
+  --Cherry-100: #f3ccc3;
+  --Cherry-300: #e48873;
+  --Cherry-700: #973c27;
+  --Cherry-900: #411a11;
+  --Mango: #FFE197;
+  --Mango-100: #fff6e0;
+  --Mango-300: #ffeab6;
+  --Mango-700: #b39e6a;
+  --Mango-900: #4d442d;
+  --Ocean: #0B7492;
+  --Ocean-100: #b6d5de;
+  --Ocean-300: #549eb3;
+  --Ocean-700: #085166;
+  --Ocean-900: #03232c;
+  --LightCharcoal: #606060;
+  --LightCherry: #FF9881;
+  --LightOcean: #68ACBF;
+  --LightMango: #FFF1CE;
+  --NeutralGray: #A4A4A4;
+  --NeutralAsh: #E1DFDF;
+  --NeutralCherry: #FFEDE9;
+  --NeutralOcean: #DDF9FB;
+  --NeutralMango: #FBF8DD;
+  --White: #FFFFFF;
+  --Light: #f8f8f8;
+  --Medium: #92949c;
+  --Dark: #2c2c2c;
+  --Black: #000000;
+  --Success: #2fd12f;
+  --Warning: #eca622;
+  --Danger: #da1d1d;
+  --Info: #0cd1e8;
+}
+
+.bg-Charcoal {
+  background-color: #383838;
+}
+
+.text-Charcoal {
+  color: #383838;
+}
+
+.bg-Charcoal-100 {
+  background-color: #c3c3c3;
+}
+
+.text-Charcoal-100 {
+  color: #c3c3c3;
+}
+
+.bg-Charcoal-300 {
+  background-color: #747474;
+}
+
+.text-Charcoal-300 {
+  color: #747474;
+}
+
+.bg-Charcoal-700 {
+  background-color: #272727;
+}
+
+.text-Charcoal-700 {
+  color: #272727;
+}
+
+.bg-Charcoal-900 {
+  background-color: #111111;
+}
+
+.text-Charcoal-900 {
+  color: #111111;
+}
+
+.bg-Cherry {
+  background-color: #D85537;
+}
+
+.text-Cherry {
+  color: #D85537;
+}
+
+.bg-Cherry-100 {
+  background-color: #f3ccc3;
+}
+
+.text-Cherry-100 {
+  color: #f3ccc3;
+}
+
+.bg-Cherry-300 {
+  background-color: #e48873;
+}
+
+.text-Cherry-300 {
+  color: #e48873;
+}
+
+.bg-Cherry-700 {
+  background-color: #973c27;
+}
+
+.text-Cherry-700 {
+  color: #973c27;
+}
+
+.bg-Cherry-900 {
+  background-color: #411a11;
+}
+
+.text-Cherry-900 {
+  color: #411a11;
+}
+
+.bg-Mango {
+  background-color: #FFE197;
+}
+
+.text-Mango {
+  color: #FFE197;
+}
+
+.bg-Mango-100 {
+  background-color: #fff6e0;
+}
+
+.text-Mango-100 {
+  color: #fff6e0;
+}
+
+.bg-Mango-300 {
+  background-color: #ffeab6;
+}
+
+.text-Mango-300 {
+  color: #ffeab6;
+}
+
+.bg-Mango-700 {
+  background-color: #b39e6a;
+}
+
+.text-Mango-700 {
+  color: #b39e6a;
+}
+
+.bg-Mango-900 {
+  background-color: #4d442d;
+}
+
+.text-Mango-900 {
+  color: #4d442d;
+}
+
+.bg-Ocean {
+  background-color: #0B7492;
+}
+
+.text-Ocean {
+  color: #0B7492;
+}
+
+.bg-Ocean-100 {
+  background-color: #b6d5de;
+}
+
+.text-Ocean-100 {
+  color: #b6d5de;
+}
+
+.bg-Ocean-300 {
+  background-color: #549eb3;
+}
+
+.text-Ocean-300 {
+  color: #549eb3;
+}
+
+.bg-Ocean-700 {
+  background-color: #085166;
+}
+
+.text-Ocean-700 {
+  color: #085166;
+}
+
+.bg-Ocean-900 {
+  background-color: #03232c;
+}
+
+.text-Ocean-900 {
+  color: #03232c;
+}
+
+.bg-LightCharcoal {
+  background-color: #606060;
+}
+
+.text-LightCharcoal {
+  color: #606060;
+}
+
+.bg-LightCherry {
+  background-color: #FF9881;
+}
+
+.text-LightCherry {
+  color: #FF9881;
+}
+
+.bg-LightOcean {
+  background-color: #68ACBF;
+}
+
+.text-LightOcean {
+  color: #68ACBF;
+}
+
+.bg-LightMango {
+  background-color: #FFF1CE;
+}
+
+.text-LightMango {
+  color: #FFF1CE;
+}
+
+.bg-NeutralGray {
+  background-color: #A4A4A4;
+}
+
+.text-NeutralGray {
+  color: #A4A4A4;
+}
+
+.bg-NeutralAsh {
+  background-color: #E1DFDF;
+}
+
+.text-NeutralAsh {
+  color: #E1DFDF;
+}
+
+.bg-NeutralCherry {
+  background-color: #FFEDE9;
+}
+
+.text-NeutralCherry {
+  color: #FFEDE9;
+}
+
+.bg-NeutralOcean {
+  background-color: #DDF9FB;
+}
+
+.text-NeutralOcean {
+  color: #DDF9FB;
+}
+
+.bg-NeutralMango {
+  background-color: #FBF8DD;
+}
+
+.text-NeutralMango {
+  color: #FBF8DD;
+}
+
+.bg-White {
+  background-color: #FFFFFF;
+}
+
+.text-White {
+  color: #FFFFFF;
+}
+
+.bg-Light {
+  background-color: #f8f8f8;
+}
+
+.text-Light {
+  color: #f8f8f8;
+}
+
+.bg-Medium {
+  background-color: #92949c;
+}
+
+.text-Medium {
+  color: #92949c;
+}
+
+.bg-Dark {
+  background-color: #2c2c2c;
+}
+
+.text-Dark {
+  color: #2c2c2c;
+}
+
+.bg-Black {
+  background-color: #000000;
+}
+
+.text-Black {
+  color: #000000;
+}
+
+.bg-Success {
+  background-color: #2fd12f;
+}
+
+.text-Success {
+  color: #2fd12f;
+}
+
+.bg-Warning {
+  background-color: #eca622;
+}
+
+.text-Warning {
+  color: #eca622;
+}
+
+.bg-Danger {
+  background-color: #da1d1d;
+}
+
+.text-Danger {
+  color: #da1d1d;
+}
+
+.bg-Info {
+  background-color: #0cd1e8;
+}
+
+.text-Info {
+  color: #0cd1e8;
+}
+
+/*
+  This file is used to contain all base imports.
+  Files inside this folder can contain global styles used in the project.
+*/
+/*  Global Resets */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+fieldset {
+  padding: 0;
+}
+
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+img {
+  border-style: none;
+}
+
+textarea {
+  overflow: auto;
+}
+
+select,
+input {
+  text-transform: none;
+}
+
+input[type='search'] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+  outline-offset: -2px;
+}
+
+button {
+  border-style: none;
+  text-transform: none;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  padding: 0;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* 
+    Set default global styles for button elements:
+    <button></button>, input[type="submit"], btn btn-submit
+*/
+.button,
+button {
+  cursor: pointer;
+}
+
+.button:disabled,
+button:disabled, .disabled.button,
+button.disabled {
+  pointer-events: none;
+}
+
+.button,
+button {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px 80px;
+  font-size: 16px;
+  margin: 16px 16px;
+  outline-style: none;
+}
+
+.btn-Charcoal {
+  background-color: #383838;
+  color: white;
+}
+
+.btn-Charcoal:hover {
+  background-color: #565656;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-Charcoal:active {
+  background-color: #303030;
+}
+
+.btn-Cherry {
+  background-color: #D85537;
+  color: white;
+}
+
+.btn-Cherry:hover {
+  background-color: #de6f55;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-Cherry:active {
+  background-color: #b8482f;
+}
+
+.btn-Ocean {
+  background-color: #0B7492;
+  color: white;
+}
+
+.btn-Ocean:hover {
+  background-color: #3089a2;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-Ocean:active {
+  background-color: #09637c;
+}
+
+.btn-Mango {
+  background-color: #FFE197;
+  color: white;
+}
+
+.btn-Mango:hover {
+  background-color: #ffe6a7;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-Mango:active {
+  background-color: #d9bf80;
+}
+
+.btn-outline-Charcoal-sm {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding: 3px 24px;
+  border: 1px solid #383838;
+  background-color: transparent;
+  font-weight: 500;
+  color: #383838;
+}
+
+.btn-outline-Charcoal-sm:hover {
+  border: 1px solid #D85537;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-Charcoal-sm:active {
+  color: #FFFFFF;
+  background-color: #ad442c;
+}
+
+.btn-outline-Charcoal {
+  border: 1px solid #383838;
+  background-color: transparent;
+  font-weight: 500;
+  color: #383838;
+}
+
+.btn-outline-Charcoal:hover {
+  background-color: #ebebeb;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-Charcoal:active {
+  background-color: #d7d7d7;
+}
+
+.btn-outline-Cherry {
+  border: 2px solid #D85537;
+  background-color: transparent;
+  font-weight: 600;
+  color: #D85537;
+}
+
+.btn-outline-Cherry:hover {
+  background-color: #fbeeeb;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-Cherry:active {
+  background-color: #f7ddd7;
+}
+
+.btn-outline-Ocean {
+  border: 2px solid #0B7492;
+  background-color: transparent;
+  font-weight: 600;
+  color: #0B7492;
+}
+
+.btn-outline-Ocean:hover {
+  background-color: #e7f1f4;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-Ocean:active {
+  background-color: #cee3e9;
+}
+
+.btn-outline-Mango {
+  border: 2px solid #FFE197;
+  background-color: transparent;
+  font-weight: 600;
+  color: #FFE197;
+}
+
+.btn-outline-Mango:hover {
+  background-color: #fffcf5;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-Mango:active {
+  background-color: #fff9ea;
+}
+
+.txt-btn {
+  font-weight: 600;
+}
+
+.a-txt-Charcoal {
+  color: #383838;
+}
+
+.a-txt-Charcoal:hover {
+  color: #D85537;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.a-txt-Charcoal:active {
+  color: #565656;
+}
+
+.a-txt-Cherry {
+  color: #D85537;
+}
+
+.a-txt-Cherry:hover {
+  color: #383838;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.a-txt-Cherry:active {
+  color: #de6f55;
+}
+
+.a-txt-Ocean {
+  color: #0B7492;
+}
+
+.a-txt-Ocean:hover {
+  color: #D85537;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.a-txt-Ocean:active {
+  color: #3089a2;
+}
+
+.a-txt-Mango {
+  color: #FFE197;
+}
+
+.a-txt-Mango:hover {
+  color: #D85537;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.a-txt-Mango:active {
+  color: #ffe6a7;
+}
+
+/* General Typography Rules */
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Headings */
+h1.uppercase,
+h2.uppercase,
+h3.uppercase,
+h4.uppercase,
+h5.uppercase,
+h6.uppercase {
+  text-transform: uppercase;
+}
+
+h1.light,
+h2.light,
+h3.light,
+h4.light,
+h5.light,
+h6.light {
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 3.25em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2.75em;
+}
+
+h4 {
+  font-size: 2.5em;
+}
+
+h5 {
+  font-size: 2.25em;
+}
+
+h6 {
+  font-size: 2em;
+}
+
+.section-heading {
+  margin-bottom: 24px;
+}
+
+/* 
+    Set default style for footer:
+    e.g. <footer></footer>, .footer
+*/
+/* 
+    Set default global styles for inputs elements:
+    e.g. select, input[type="text"], input[type="email"], input[type="number"]
+*/
+/* 
+    Set default global styles for list elements:
+    e.g. ul, ol, li
+*/
+ul,
+li,
+ol {
+  font-size: 14px;
+  font-weight: 400;
+  list-style: none;
+  margin: auto 0;
+  padding: 0;
+}
+
+/* 
+    Set default global styles for: 
+    Images, Videos, iFrame, SVG assets, Figures 
+*/
+/* 
+    Set default global style for table element:
+    e.g. <table></table>, .table
+*/
+/*
+  This file is used to contain all component imports.
+  Files inside this folder can contain specific element styles and layout. 
+*/
+/* 
+    Set wrapper properties:
+    e.g. .wrapper, .main-wrapper
+*/
+.global-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1250px;
+  padding: 0 32px;
+}
+
+@media (max-width: 992px) {
+  .global-wrapper {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .global-wrapper {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .global-wrapper {
+    padding: 0 16px;
+  }
+}
+
+.global-wrapper.section-padding {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+@media (max-width: 1200px) {
+  .global-wrapper.section-padding {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+@media (max-width: 992px) {
+  .global-wrapper.section-padding {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .global-wrapper.section-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .global-wrapper.section-padding {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media (max-width: 376px) {
+  .global-wrapper.section-padding {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.masthead {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 64px;
+  padding-bottom: 0 !important;
+  background-color: var(--Primary);
+  overflow: hidden;
+}
+
+.masthead .heading-group {
+  position: relative;
+  padding-right: 16px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  z-index: 2;
+  color: var(--Primary-100);
+}
+
+.masthead .heading-group h1 {
+  margin-bottom: 14px;
+}
+
+.masthead .preview-wrapper {
+  position: relative;
+  padding-left: 16px;
+  height: 320px;
+  width: 460px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  z-index: 1;
+}
+
+.masthead .preview-wrapper [class*='preview-'] {
+  position: absolute;
+  border: 8px solid var(--Light);
+  -webkit-box-shadow: 0 0 15px rgba(104, 104, 104, 0.2);
+          box-shadow: 0 0 15px rgba(104, 104, 104, 0.2);
+}
+
+.masthead .preview-wrapper [class*='preview-'] img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top center;
+     object-position: top center;
+}
+
+.masthead .preview-wrapper .preview-1 {
+  top: 0;
+  right: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+}
+
+.masthead .preview-wrapper .preview-2 {
+  left: -180px;
+  bottom: 0;
+  width: 240px;
+  height: 260px;
+  z-index: 1;
+}
+
+@media (max-width: 1200px) {
+  .masthead {
+    padding: 56px;
+  }
+  .masthead .preview-wrapper {
+    width: 400px;
+  }
+  .masthead .preview-wrapper .preview-2 {
+    left: -130px;
+  }
+}
+
+@media (max-width: 992px) {
+  .masthead {
+    padding: 48px;
+  }
+  .masthead .preview-wrapper {
+    width: 380px;
+  }
+  .masthead .preview-wrapper .preview-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .masthead {
+    height: 300px;
+    padding: 40px;
+  }
+  .masthead .heading-group {
+    padding-right: 0;
+  }
+  .masthead .preview-wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .masthead {
+    padding: 32px;
+  }
+}
+
+.color-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+}
+
+.color-list .color-circle {
+  height: 136px;
+  width: 136px;
+  border-radius: 104px;
+  border: 1px solid transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.color-list .color-circle:not(:last-child) {
+  margin-right: 16px;
+}
+
+.color-list .color-circle span {
+  text-transform: uppercase;
+}
+
+.font-list {
+  margin: auto 0;
+  padding-top: 2rem;
+}
+
+.font-list .list-thin {
+  font-weight: 300;
+}
+
+.font-list .list-regular {
+  font-weight: 400;
+}
+
+.font-list .list-semibold {
+  font-weight: 500;
+}
+
+.font-list .list-bold {
+  font-weight: 600;
+}
+
+.text-space {
+  margin: 16px;
+  padding: 16px 88px;
+}
+/*# sourceMappingURL=main.css.map */

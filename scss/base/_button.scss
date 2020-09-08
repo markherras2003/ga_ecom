@@ -3,6 +3,7 @@
     <button></button>, input[type="submit"], btn btn-submit
 */
 
+
 %button-default {
   cursor: pointer;
 
@@ -10,9 +11,211 @@
   &.disabled {
     pointer-events: none;
   }
+  
 }
+
 
 .button,
 button {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: $size-2 $size-10;
+  font-size: $size-2;
   @extend %button-default;
+  margin: $size-2 $size-2;  
+  outline-style: none;
 }
+
+
+.btn-Charcoal {
+  background-color: getColor(Charcoal);
+  color: white;
+  &:hover {
+    background-color: tint( getColor(Charcoal), 15);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background-color: shade( getColor(Charcoal), 15),
+  } 
+}
+
+.btn-Cherry {
+  background-color: getColor(Cherry);
+  color: white;
+  &:hover {
+    background-color: tint( getColor(Cherry), 15);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background-color: shade( getColor(Cherry), 15),
+  } 
+}
+
+.btn-Ocean {
+  background-color: getColor(Ocean);
+  color: white;
+  &:hover {
+    background-color: tint( getColor(Ocean), 15);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background-color: shade( getColor(Ocean), 15),
+  } 
+}
+
+.btn-Mango {
+  background-color: getColor(Mango);
+  color: white;
+  &:hover {
+    background-color: tint( getColor(Mango), 15);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background-color: shade( getColor(Mango), 15),
+  } 
+}
+
+.btn-outline-Charcoal-sm {
+  padding-left: $size-2;
+  padding-right: $size-2;
+  padding: 3px $size-3;
+  border: 1px solid getColor(Charcoal);
+  background-color: transparent;
+  font-weight: 500;
+  color: getColor(Charcoal);
+
+  &:hover {
+    border: 1px solid getColor(Cherry);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    color: getColor(White);
+    background-color: shade( getColor(Cherry), 20),
+  } 
+
+}
+
+  .btn-outline-Charcoal {
+    border: 1px solid getColor(Charcoal);
+    background-color: transparent;
+    font-weight: 500;
+    color: getColor(Charcoal);
+
+    &:hover {
+      background-color: tint( getColor(Charcoal), 90);
+      transition: all 0.3s ease;
+    }
+    &:active {
+      background-color: tint( getColor(Charcoal), 80),
+    } 
+
+  }
+
+  .btn-outline-Cherry {
+    border: 2px solid getColor(Cherry);
+    background-color: transparent;
+    font-weight: 600;
+    color: getColor(Cherry);
+
+    &:hover {
+      background-color: tint( getColor(Cherry), 90);
+      transition: all 0.3s ease;
+    }
+    &:active {
+      background-color: tint( getColor(Cherry), 80),
+    } 
+
+  }
+
+  .btn-outline-Ocean {
+    border: 2px solid getColor(Ocean);
+    background-color: transparent;
+    font-weight: 600;
+    color: getColor(Ocean);
+
+    &:hover {
+      background-color: tint( getColor(Ocean), 90);
+      transition: all 0.3s ease;
+    }
+    &:active {
+      background-color: tint( getColor(Ocean), 80),
+    } 
+
+  }
+
+  .btn-outline-Mango {
+    border: 2px solid getColor(Mango);
+    background-color: transparent;
+    font-weight: 600;
+    color: getColor(Mango);
+
+    &:hover {
+      background-color: tint( getColor(Mango), 90);
+      transition: all 0.3s ease;
+    }
+    &:active {
+      background-color: tint( getColor(Mango), 80),
+    } 
+
+  }
+
+  .txt-btn {
+    font-weight: 600;
+  }
+// .btn-trans-cherry {
+//   &:hover {
+//     background-color: tint( getColor(Cherry), 30);
+//     transition: all 0.3s ease;
+//   }
+//   &:active {
+//     background-color: shade( getColor(Cherry), 30),
+//   } 
+// }
+
+  .a-txt-Charcoal{
+    color: getColor(Charcoal);
+
+   &:hover {
+     color: getColor(Cherry);
+     transition: all 0.3s ease;
+   }
+    &:active {
+      color: tint( getColor(Charcoal), 15),
+    } 
+  }
+
+  .a-txt-Cherry{
+    color: getColor(Cherry);
+
+   &:hover {
+     color: getColor(Charcoal);
+     transition: all 0.3s ease;
+   }
+    &:active {
+      color: tint( getColor(Cherry), 15),
+    } 
+  }
+
+  .a-txt-Ocean{
+    color: getColor(Ocean);
+
+   &:hover {
+     color: getColor(Cherry);
+     transition: all 0.3s ease;
+   }
+    &:active {
+      color: tint( getColor(Ocean), 15),
+    } 
+  }
+
+  .a-txt-Mango{
+    color: getColor(Mango);
+
+   &:hover {
+     color: getColor(Cherry);
+     transition: all 0.3s ease;
+   }
+    &:active {
+      color: tint( getColor(Mango), 15),
+    } 
+  }

@@ -6,11 +6,11 @@
 .global-wrapper {
   width: 100%;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1250px;
   padding: 0 $size-4;
 
   @include lg {
-    padding: 0 $size-3;
+    padding: 0 $size-4;
   }
 
   @include md {

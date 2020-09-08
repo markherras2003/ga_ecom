@@ -6,6 +6,9 @@
 ul,
 li,
 ol {
-  margin: 0;
+  font-size: $size-1;
+  font-weight: 400;
+  list-style: none;
+  margin: auto 0;
   padding: 0;
 }

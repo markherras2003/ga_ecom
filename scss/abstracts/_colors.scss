@@ -1,7 +1,10 @@
 $colors: (
-  primary: #3880ff,
-  secondary: #0cd1e8,
-  tertiary: #7044ff
+  charcoal: #383838,
+  cherry: #D85537,
+  mango: #FFE197,
+  ocean: #0B7492,
+  ashgray: #A4A4A4,
+  darkgray: #FFE197
 );
 
 @each $color, $value in $colors {

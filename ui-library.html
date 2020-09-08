@@ -8,7 +8,8 @@
 
     <script type="text/javascrip" src="./js/main.js?version=1.0.0"></script>
 
-    <link rel="stylesheet" href="./assets/css/main.css?version=1.0.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/custom/ui-library.css">
     <link rel="stylesheet" href="./assets/css/ui-library.css?version=1.0.0">
 
     <title>UI Library</title>
@@ -16,20 +17,17 @@
 
 <body>
 
-    <div class="masthead">
+    <div class="masthead ">
         <div class="heading-group">
             <div class="section-heading">
                 <h1>Primera SMASCSS</h1>
-                <h2>UI Library</h2>
+                <h2>UI Library</h2> 
             </div>
-            <a href=".index.html" class="button bg-berry">Go to Home Page</a>
+            <a href="index.html" class="button bg-berry">Go to Home Page</a>
         </div>
         <div class="preview-wrapper">
             <div class="preview-1">
-                <img src="./assets/img/ui-library/preview-1.jpg" alt="Preview">
-            </div>
-            <div class="preview-2">
-                <img src="./assets/img/ui-library/preview-2.jpg" alt="Preview">
+                <img src="./assets/img/ui-library/Landing.png" alt="Preview">
             </div>
         </div>
     </div>
@@ -40,14 +38,64 @@
                 <h1 class="">Color Pallete</h1>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <h2 class="mb-2">Primary</h2>
+                <div class="col-12 col-md-6">
+                    <h2 class="mb-2 ">Primary</h2>
+                        <div class="color-list">
+                            <div class="color-circle bg-Charcoal">
+                                <span class="text-White">Charcoal</span>
+                                <span class="hex text-White">#EA587C</span>
+                            </div>
+                            <div class="color-circle bg-Cherry">
+                                <span class="text-White">Cherry</span>
+                                <span class="hex text-White">#32B4C4</span>
+                            </div>
+                            <div class="color-circle bg-Ocean">
+                                <span class="text-White">Ocean</span>
+                                <span class="hex text-White">#1B9A9A</span>
+                            </div>
+                            <div class="color-circle bg-Mango">
+                                <span class="text-Mango-900">Mango</span>
+                                <span class="hex text-Mango-900">#1B9A9A</span>
+                            </div>
+                        </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <h2 class="mb-2">Secondary</h2>
+                    <h2 class="mb-2 ">Secondary</h2>
+                        <div class="color-list">
+                            <div class="color-circle bg-LightCharcoal">
+                                <span class="hex text-White">#EA587C</span>
+                            </div>
+                            <div class="color-circle bg-LightCherry">
+                                <span class="hex text-White">#32B4C4</span>
+                            </div>
+                            <div class="color-circle bg-LightOcean">
+                                <span class="hex text-White">#1B9A9A</span>
+                            </div>
+                            <div class="color-circle bg-LightMango">
+                                <span class="hex text-Mango-900">#1B9A9A</span>
+                            </div>
+                        </div>
                 </div>
-                <div class="col-12">
-                    <h2 class="mb-2">Neutral</h2>
+                <div class="col-12 col-md-6">
+                    <h2 class="mb-2 ">Neutral</h2>
+                        <div class="color-list">
+                            <div class="color-circle bg-NeutralGray">
+                                <span class="hex text-White">#EA587C</span>
+                            </div>
+                            <div class="color-circle bg-NeutralAsh">
+                                <span class="hex text-Charcoal">#EA587C</span>
+                            </div>
+                            <div class="color-circle bg-NeutralCherry">
+                                <span class="hex text-Cherry">#32B4C4</span>
+                            </div>
+                            <div class="color-circle bg-NeutralOcean">
+                                <span class="hex text-Ocean">#1B9A9A</span>
+                            </div>
+                            <div class="color-circle bg-NeutralMango">
+                                <span class="hex text-Mango-900">#1B9A9A</span>
+                            </div>
+                            
+                        </div>
                 </div>
             </div>
         </div>
@@ -61,6 +109,29 @@
             <div class="row">
                 <div class="col-12">
                     <h2 class="mb-2">Font Family</h2>
+                    <div class="font-list">
+                        <h6>Montserat Thin</h6>
+                        <div class="list-thin">
+                            <p>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
+                            <p>1 2 3 4 5 6 7 8 9 0</p>
+                        </div>
+                        <h6>Montserat Regular</h6>
+                        <div class="list-regular">
+                            <p>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
+                            <p>1 2 3 4 5 6 7 8 9 0</p>
+                        </div>
+                        <h6>Montserat Semi-Bold</h6>
+                        <div class="list-semibold">
+                            <p>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
+                            <p>1 2 3 4 5 6 7 8 9 0</p>
+                        </div>
+                        <h6>Montserat Bold</h6>
+                        <div class="list-bold">
+                            <p>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
+                            <p>1 2 3 4 5 6 7 8 9 0</p>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-12 col-md-6 mb-3 mb-md-5">
                     <h2 class="mb-2">Heading Rules</h2>
@@ -89,32 +160,48 @@
             <div class="row">
                 <div class="col-12 col-md-6">
                     <h2 class="mb-2">Colored</h2>
-                    <button class="lg"> Button </button>
+                    <button class="lg btn-Charcoal"> Charcoal </button>
+                    <button class="lg btn-Cherry"> Cherry </button>
+                    <button class="lg btn-Ocean"> Ocean </button>
+                    <button class="lg btn-Mango"> Mango </button>
                 </div>
-                <div class="col-12 col-md-6">
-                    <h2 class="mb-2">States</h2>
-                </div>
-                <div class="col-12 col-md-6">
-                    <h2 class="mb-2">With Icons</h2>
-                </div>
-                <div class="col-12 col-md-6">
-                    <h2 class="mb-2">Color Variations</h2>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-12 col-md-6">
                     <h2 class="mb-2">Outline Buttons</h2>
+                    <button class="lg btn-outline-Charcoal"> Charcoal </button>
+                    <button class="lg btn-outline-Cherry"> Cherry </button>
+                    <button class="lg btn-outline-Ocean"> Ocean </button>
+                    <button class="lg btn-outline-Mango"> Mango </button>
                 </div>
                 <div class="col-12 col-md-6">
-                    <h2 class="mb-2">States</h2>
+                    <h2 class="mb-2">Text Buttons</h2>
+
+                    <a href="#" class="lg a-txt-Charcoal txt-btn text-space" >Charcoal <i class="fas fa-caret-right"></i></a>
+                    <a href="#" class="lg a-txt-Cherry txt-btn text-space">Cherry <i class="fas fa-caret-right"></i></a>
+                    <a href="#" class="lg a-txt-Ocean txt-btn text-space">Ocean <i class="fas fa-caret-right"></i></a>
+                    <a href="#" class="lg a-txt-Mango txt-btn text-space">Mango <i class="fas fa-caret-right"></i></a>                    
                 </div>
                 <div class="col-12 col-md-6">
-                    <h2 class="mb-2">With Icons</h2>
-                </div>
-                <div class="col-12 col-md-6">
-                    <h2 class="mb-2">Color Variations</h2>
-                </div>
-            </div>
+                    <h2 class="mb-2">Icons</h2>
+                    <i class="fab fa-instagram a-txt-Charcoal fa-3x text-space"></i>
+                    <i class="fab fa-facebook a-txt-Charcoal fa-3x text-space"></i>
+                    <i class="fab fa-twitter a-txt-Charcoal fa-3x text-space"></i>
+                    <i class="fab fa-youtube a-txt-Charcoal fa-3x text-space"></i>
+
+                    <i class="fab fa-instagram a-txt-Cherry fa-3x text-space"></i>
+                    <i class="fab fa-facebook a-txt-Cherry fa-3x text-space"></i>
+                    <i class="fab fa-twitter a-txt-Cherry fa-3x text-space"></i>
+                    <i class="fab fa-youtube a-txt-Cherry fa-3x text-space"></i>
+
+                    <i class="fab fa-instagram a-txt-Ocean fa-3x text-space"></i>
+                    <i class="fab fa-facebook a-txt-Ocean fa-3x text-space"></i>
+                    <i class="fab fa-twitter a-txt-Ocean fa-3x text-space"></i>
+                    <i class="fab fa-youtube a-txt-Ocean fa-3x text-space"></i>
+
+                    <i class="fab fa-instagram a-txt-Mango fa-3x text-space"></i>
+                    <i class="fab fa-facebook a-txt-Mango fa-3x text-space"></i>
+                    <i class="fab fa-twitter a-txt-Mango fa-3x text-space"></i>
+                    <i class="fab fa-youtube a-txt-Mango fa-3x text-space"></i>
+                </div>   
         </div>
     </section>
 
