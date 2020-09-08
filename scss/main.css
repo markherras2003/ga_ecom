@@ -927,6 +927,71 @@ ol {
   }
 }
 
+.hero-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1550px;
+  padding: 0 32px;
+}
+
+@media (max-width: 992px) {
+  .hero-wrapper {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-wrapper {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-wrapper {
+    padding: 0 16px;
+  }
+}
+
+.hero-wrapper.section-padding {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+@media (max-width: 1200px) {
+  .hero-wrapper.section-padding {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-wrapper.section-padding {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-wrapper.section-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-wrapper.section-padding {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media (max-width: 376px) {
+  .hero-wrapper.section-padding {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
 /*
   This file is used to contain all component imports.
   Files inside this folder should contain all styles relating to a reusable component.
@@ -946,6 +1011,7 @@ ol {
 }
 
 .nav-top .nav-top-menu {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -956,13 +1022,18 @@ ol {
 }
 
 .nav-top .nav-top-user {
+  text-align: right;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .nav-top .nav-top-user li {
-  padding-left: 16px;
+  padding-left: 32px;
 }
 
 .nav-top i {
@@ -988,13 +1059,11 @@ ol {
 
 .nav-main .search-bar {
   margin: 0 auto;
-  background-color: gray;
   width: 100%;
   position: relative;
 }
 
 .nav-main .search-bar .search {
-  background-color: red;
   width: 100%;
   height: 70%;
   position: relative;
@@ -1010,6 +1079,7 @@ ol {
   width: 100%;
   padding: 14px;
   outline: none;
+  border: 4px solid white;
   color: #747474;
 }
 
@@ -1018,6 +1088,8 @@ ol {
 }
 
 .nav-main .search-bar .search .btn-search {
+  margin: auto 0;
+  padding: 0 14px;
   width: px;
   height: 36px;
   background: #383838;
@@ -1038,29 +1110,12 @@ ol {
   padding-right: 16px;
 }
 
-#container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  max-width: 1200px;
-}
-
-.column.left {
-  width: 230px;
-}
-
-.column.right {
-  width: 230px;
-  border-left: 1px solid #eee;
-}
-
-.column.center {
-  border-left: 1px solid #eee;
+.nav-main .nav-icon {
+  font-size: 35px;
+  padding-right: 0px;
+  padding-left: 30px;
+  padding-top: 7px;
+  padding-bottom: 16px;
 }
 
 /*
@@ -1980,6 +2035,71 @@ ol {
 
 @media (max-width: 376px) {
   .global-wrapper.section-padding {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.hero-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1550px;
+  padding: 0 32px;
+}
+
+@media (max-width: 992px) {
+  .hero-wrapper {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-wrapper {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-wrapper {
+    padding: 0 16px;
+  }
+}
+
+.hero-wrapper.section-padding {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+@media (max-width: 1200px) {
+  .hero-wrapper.section-padding {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-wrapper.section-padding {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-wrapper.section-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-wrapper.section-padding {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media (max-width: 376px) {
+  .hero-wrapper.section-padding {
     padding-top: 24px;
     padding-bottom: 24px;
   }
