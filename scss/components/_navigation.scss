@@ -65,10 +65,12 @@
             height: 70%;
             position: relative;
             display: flex;
+            margin-bottom: 0;
 
             .search-term {
                 margin: auto;
                 margin-right: 0;
+                margin-bottom: 5px;
                 height: $size-3;
                 width: 100%;
                 padding: $size-1;
@@ -83,6 +85,7 @@
 
             .btn-search  {
                 margin: auto 0;
+                margin-bottom: 5px;;
                 padding: 0$size-1;
                 width: px;
                 height: 36px;
@@ -99,6 +102,11 @@
 
             li {
                 padding-right: $size-2;
+
+                a {
+                    text-decoration: none;
+                    color: getColor(White);
+                }
             }
         }
     }

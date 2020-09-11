@@ -1070,11 +1070,13 @@ ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 0;
 }
 
 .nav-main .search-bar .search .search-term {
   margin: auto;
   margin-right: 0;
+  margin-bottom: 5px;
   height: 24px;
   width: 100%;
   padding: 14px;
@@ -1089,6 +1091,7 @@ ol {
 
 .nav-main .search-bar .search .btn-search {
   margin: auto 0;
+  margin-bottom: 5px;
   padding: 0 14px;
   width: px;
   height: 36px;
@@ -1108,6 +1111,11 @@ ol {
 
 .nav-main .search-bar .categories li {
   padding-right: 16px;
+}
+
+.nav-main .search-bar .categories li a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .nav-main .nav-icon {
