@@ -13,24 +13,29 @@
 
     .nav-top-menu{     
         width: 50%;
-        display: flex;
+
+        li {
+            display: inline-block;
+        }
 
         a {
+        
            padding-left: 4px;
         }
 
     }
 
     .nav-top-user {
-        text-align: right;
         align-items: right;
         width: 50%;
-        display: flex;
+        text-align: right;
+     
         
-
         li{
+            display: inline-block;
             padding-left: $size-4;
         }
+
     
     }
 
