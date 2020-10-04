@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./scss/main.css">
     <link rel="stylesheet" href="./assets/css/ui-library.css?version=1.0.0">
 
     <title>Document</title>
 </head>
+
 <body>
     <div class="bg-White">
-        <div class="global-wrapper nav-top" style="background:red;">
+        <div class="global-wrapper nav-top">
             <ul class="nav-top-menu">
                 <li>
                     Follow us on
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/"><i class="fab fa-facebook a-txt-Charcoal"></i></a>                
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook a-txt-Charcoal"></i></a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/"><i class="fab fa-instagram-square a-txt-Charcoal"></i></a>
@@ -30,95 +33,1028 @@
                     <a href="https://www.youtube.com/"><i class="fab fa-youtube a-txt-Charcoal"></i></a>
                 </li>
             </ul>
-            <ul class="nav-top-user"> 
+            <ul class="nav-top-user">
                 <li>
-                    <a href="#" class="a-txt-Charcoal"><i class="fas fa-bell"></i> Notifications</a>
+                    <!-- <a href="#" class="a-txt-Charcoal"><i class="fas fa-bell"></i> Notifications</a>
+                    <span class="noti-badge">15</span> -->
+                    
+                    <div class="dropdown">
+                        <a href="#" class="a-txt-Charcoal dropbtn"><i class="fas fa-bell"></i> Notifications</a>
+                        <span class="noti-badge">15</span>
+                        <div class="dropdown-content">
+                            <span>Recent Notifications</span> 
+                            <div class="notification-product">
+                                <a href="#">
+                                    <img src="/assets/img/landing/product-image (1).jpg" alt="">
+                                    <div class="noti-product-wrapper">
+                                        <div class="noti-tittle">Tittle</div>
+                                        <div class="noti-description">dsdasdasdasdasdasdas adsda sd asdasda sd asda sd asdsa asda sd asd asd asd asd asd asd asd asd asd asd asd esdasdasdasdasdscription</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="notification-product">
+                                <a href="#">
+                                    <img src="/assets/img/landing/product-image (1).jpg" alt="">
+                                    <div class="noti-product-wrapper">
+                                        <div class="noti-tittle">Tittle</div>
+                                        <div class="noti-description">dsdasdasdasdasdasdas adsda sd asdasda sd asda sd asdsa asda sd asd asd asd asd asd asd asd asd asd asd asd esdasdasdasdasdscription</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="notification-product">
+                                <a href="#">
+                                    <img src="/assets/img/landing/product-image (1).jpg" alt="">
+                                    <div class="noti-product-wrapper">
+                                        <div class="noti-tittle">Tittle</div>
+                                        <div class="noti-description">dsdasdasdasdasdasdas adsda sd asdasda sd asda sd asdsa asda sd asd asd asd asd asd asd asd asd asd asd asd esdasdasdasdasdscription</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="notification-product">
+                                <a href="#">
+                                    <img src="/assets/img/landing/product-image (1).jpg" alt="">
+                                    <div class="noti-product-wrapper">
+                                        <div class="noti-tittle">Tittle</div>
+                                        <div class="noti-description">dsdasdasdasdasdasdas adsda sd asdasda sd asda sd asdsa asda sd asd asd asd asd asd asd asd asd asd asd asd esdasdasdasdasdscription</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <button>View all</button>
+                          </div>
+                    </div>
                 </li>
                 <li>
                     <a href="#" class="a-txt-Charcoal">Login</a>
                 </li>
                 <li>
-                    <a href="#" class="a-txt-Charcoal btn-outline-Charcoal-sm">Register</a>
+                    <a href="#" class="btn-outline-Charcoal-sm">Register</a>
                 </li>
             </ul>
         </div>
     </div>
-
-    <!-- <div class="bg-Cherry">
-        <div class="global-wrapper nav-top">
-            <div class="nav-top-left">
-                <a href="#" class="text-Charcoal">Follow us on</a>
-                <a href="https://www.facebook.com/"><i class="fab fa-facebook a-txt-Charcoal"></i></a>
-                <a href="https://www.instagram.com/"><i class="fab fa-instagram-square a-txt-Charcoal"></i></a>
-                <a href="https://twitter.com/"><i class="fab fa-twitter a-txt-Charcoal"></i></a>
-                <a href="https://www.youtube.com/"><i class="fab fa-youtube a-txt-Charcoal"></i></a>
-            </div>
-            <div class="nav-top-right">
-                <a href="#" class="a-txt-Charcoal"><i class="fas fa-bell"></i> Notifications</a>
-                <a href="#" class="a-txt-Charcoal">Login</a>
-                <a href="#" class="a-txt-Charcoal btn-outline-Charcoal">Register</a>
-            </div>
-        </div>
-    </div> -->
 
     <div class="bg-Charcoal">
         <div class="global-wrapper">
             <ul class="nav-main">
                 <li class="branding">
-                    DZIREE
+                    <!-- DMSHOPS -->
+                    DMShoppers
+                    <!-- DZIREE -->
                 </li>
                 <li class="search-bar">
-                    <div class="search">
+                        <form action="/search.html" class="search">
                         <input type="text" class="search-term" placeholder="Search">
-                        <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
-                    </div>
+                        <button type="submit" class="btn-search">
+                            <!-- <img src="/assets/svg/search.svg" alt="search button" class="btn-img"> -->
+
+                            <svg height="15pt" viewBox="0 -20 480 480" width="15pt" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M225.474,0C101.151,0,0,101.151,0,225.474c0,124.33,101.151,225.474,225.474,225.474
+                c124.33,0,225.474-101.144,225.474-225.474C450.948,101.151,349.804,0,225.474,0z M225.474,409.323
+                c-101.373,0-183.848-82.475-183.848-183.848S124.101,41.626,225.474,41.626s183.848,82.475,183.848,183.848
+                S326.847,409.323,225.474,409.323z" />
+
+                                <path
+                                    d="M505.902,476.472L386.574,357.144c-8.131-8.131-21.299-8.131-29.43,0c-8.131,8.124-8.131,21.306,0,29.43l119.328,119.328
+                c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z" />
+                            </svg>
+
+                        </button>
+                    </form>
+                   
                     <ul class="categories">
                         <li>
-                            <a href="#">Shops</a>                            
+                            <a href="#">Shops</a>
                         </li>
                         <li>
-                            <a href="#">Categories</a>                            
+                            <a href="#">Categories</a>
                         </li>
                         <li>
-                            <a href="#">Women</a>                            
+                            <a href="#">Women</a>
                         </li>
                         <li>
-                            <a href="#">Men</a>                            
+                            <a href="#">Men</a>
                         </li>
                         <li>
-                            <a href="#">Kids</a>                            
+                            <a href="#">Kids</a>
                         </li>
                         <li>
-                            <a href="#">Toys</a>                            
+                            <a href="#">Toys</a>
                         </li>
                         <li>
-                            <a href="#">Gadgets</a>                            
+                            <a href="#">Gadgets</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <i class="far fa-heart nav-icon"></i>
+                    <a href="#" class="btn-img-sides">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 32 32">
+                            <path id="facebook-square-brands"
+                                d="M28.571,32H3.429A3.429,3.429,0,0,0,0,35.429V60.571A3.429,3.429,0,0,0,3.429,64h9.8V53.121h-4.5V48h4.5V44.1c0-4.439,2.643-6.891,6.691-6.891a27.261,27.261,0,0,1,3.966.346v4.357H21.655a2.561,2.561,0,0,0-2.887,2.766V48h4.913l-.786,5.121H18.768V64h9.8A3.429,3.429,0,0,0,32,60.571V35.429A3.429,3.429,0,0,0,28.571,32Z"
+                                transform="translate(0 -32)" />
+                        </svg> -->
+                        <svg height="25pt" viewBox="0 -20 480 480" width="25pt" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0" />
+                        </svg>
+                        <span class="btn-badge">32</span>
+                    </a>
+                    <!-- <img src="/assets/svg/heart.svg" alt="search button" class="btn-img-sides"> -->
                 </li>
                 <li>
-                    <i class="fas fa-shopping-cart nav-icon"></i>
+                    <!-- <img src="/assets/svg/shopping-cart.svg" alt="search button" class="btn-img-sides"> -->
+                    <a href="#" class="btn-img-sides">
+                        <svg height="28pt" viewBox="0 -20 480 480" width="28pt" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0" />
+                            <path
+                                d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0" />
+                            <path
+                                d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0" />
+                        </svg>
+                        <span class="btn-badge">4</span>
+                    </a>
                 </li>
             </ul>
         </div>
     </div>
 
-    <section class="bg-Mango">
-        <div class="hero-wrapper bg-Cherry hero-height">
-            skjdlkjeofijef
+    <div class="content">
+        <div class="css-carousel">
+
+            <!-- carousel controls -->
+            <input type="radio" name="carousel" id="carousel-1" checked />
+            <input type="radio" name="carousel" id="carousel-2" />
+            <input type="radio" name="carousel" id="carousel-3" />
+            <input type="radio" name="carousel" id="carousel-4" />
+
+            <!-- carousel navigation -->
+            <div class="carousel-nav">
+                <label for="carousel-1"></label>
+                <label for="carousel-2"></label>
+                <label for="carousel-3"></label>
+                <label for="carousel-4"></label>
+            </div>
+
+            <!-- carousel slides -->
+            <div class="carousel-slides">
+                <div class="carousel-inner">
+                    <div class="carousel-item bg-NeutralMango">
+                        <div class="center text-Charcoal">
+                            <div class="title">
+                                <p>High Quality Cosmetics</p>
+                                <h1>Beauty Promo</h1>
+                                <p class="p-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                                    non sed in doloremque nam dignissimos blanditiis aperiam aliquid minus. Eos
+                                    voluptate corporis error soluta! At saepe minima optio debitis vero.</p>
+                                <Button class="btn-outline-Charcoal">Shop Now</Button>
+                            </div>
+
+                            <div class="hero-image">
+                                <img src="/assets/img/landing/model-hero-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-NeutralOcean">
+                        <div class="center text-Charcoal">
+                            <div class="title">
+                                <p>High Quality Cosmetics</p>
+                                <h1>Beauty Promo</h1>
+                                <p class="p-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                                    non sed in doloremque nam dignissimos blanditiis aperiam aliquid minus. Eos
+                                    voluptate corporis error soluta! At saepe minima optio debitis vero.</p>
+                                <Button class="btn-outline-Charcoal">Shop Now</Button>
+                            </div>
+
+                            <div class="hero-image">
+                                <img src="/assets/img/landing/model-hero-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-NeutralCherry">
+                        <div class="center text-Charcoal">
+                            <div class="title">
+                                <p>High Quality Cosmetics</p>
+                                <h1>Beauty Promo</h1>
+                                <p class="p-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                                    non sed in doloremque nam dignissimos blanditiis aperiam aliquid minus. Eos
+                                    voluptate corporis error soluta! At saepe minima optio debitis vero.</p>
+                                <Button class="btn-outline-Charcoal">Shop Now</Button>
+                            </div>
+
+                            <div class="hero-image">
+                                <img src="/assets/img/landing/model-hero-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-NeutralAsh">
+                        <div class="center text-Charcoal">
+                            <div class="title">
+                                <p>High Quality Cosmetics</p>
+                                <h1>Beauty Promo</h1>
+                                <p class="p-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                                    non sed in doloremque nam dignissimos blanditiis aperiam aliquid minus. Eos
+                                    voluptate corporis error soluta! At saepe minima optio debitis vero.</p>
+                                <Button class="btn-outline-Charcoal">Shop Now</Button>
+                            </div>
+
+                            <div class="hero-image">
+                                <img src="/assets/img/landing/model-hero-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
 
-     ​
+    <div class="featured-shops bg-Charcoal">
+        <div class="shops bg-NeutralOcean">
+            <img src="/assets/img/landing/woman.png" alt="">
+            <div class="shops-right">
+                <img class="shop-logo" src="/assets/img/landing/LogoMakr_4C0qMg.png" alt="">
+                <b>Trendlines.ph</b>
+                <p>Lorem ipsum dolor sit amet </p>
+            </div>
+            <a href="/shops.html">Go to shop
+                <svg id="Capa_1" enable-background="new 0 0 494.942 494.942" height="512"
+                    viewBox="0 0 494.942 494.942" width="512" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m35.353 0 424.236 247.471-424.236 247.471z" />
+                </svg>
+            </a>
+        </div>
+        <div class="shops bg-NeutralGray">
+            <img src="/assets/img/landing/woman.png" alt="">
+            <div class="shops-right">
+                <b>Shop Name</b>
+                <p>Lorem ipsum dolor sit amet </p>
+                <a href="#">Go to shop
+                    <svg id="Capa_1" enable-background="new 0 0 494.942 494.942" height="512"
+                        viewBox="0 0 494.942 494.942" width="512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m35.353 0 424.236 247.471-424.236 247.471z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="shops bg-NeutralCherry">
+            <img src="/assets/img/landing/woman.png" alt="">
+            <div class="shops-right">
+                <b>Shop Name</b>
+                <p>Lorem ipsum dolor sit amet </p>
+                <a href="#">Go to shop
+                    <svg id="Capa_1" enable-background="new 0 0 494.942 494.942" height="512"
+                        viewBox="0 0 494.942 494.942" width="512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m35.353 0 424.236 247.471-424.236 247.471z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
 
-    <div class="preview-wrapper">
+    <div class="global-wrapper">
+        <div class="tittle-wrapper">
+            <h3>Popular Products</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis saepe fugiat distinctio aperiam
+                asperiores natus .</p>
+        </div>
+
+        <div class="product-list">
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image.jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Multi color men and women bottom school pants asdsadasdasd asdasd asdasd 
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+         
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (1).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (2).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (3).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (4).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="product-list">
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (5).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+         
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (6).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (7).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (8).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (9).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="product-list">
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (10).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+         
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (11).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (12).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (13).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (14).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="product-list">
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (15).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+         
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (16).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (17).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (18).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (19).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="bottom-wrapper">
+            <Button class="btn-outline-Charcoal">Load more</Button>
+        </div>
+
+    </div>
+
+    <div class="bg-Cherry">
+        <div class="global-wrapper text-White">
+            <div class="ad-promo">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores earum qui, id voluptatibus corporis, sit enim quaerat quia exercitationem, adipisci doloribus pariatur! Quia voluptatum porro, adipisci voluptatem aspernatur pariatur recusandae!  
+            </div>
+        </div>
+    </div>
+
+
+    <div class="global-wrapper">
+        <div class="tittle-wrapper">
+            <h3>New Products</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis saepe fugiat distinctio aperiam
+                asperiores natus .</p>
+        </div>
+
+        <div class="product-list">
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image.jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Multi color men and women bottom school pants asdsadasdasd asdasd asdasd 
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+         
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (1).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (2).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (3).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (4).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="product-list">
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (5).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+         
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (6).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (7).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (8).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (9).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="product-list">
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (10).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+         
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (11).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (12).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (13).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (14).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="product-list">
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (15).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+         
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (16).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (17).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (18).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-wrapper">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="/assets/img/landing/product-image (19).jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Product name
+                    </div>
+                    <div class="product-price">
+                        $200.00
+                    </div>
+                    <div class="product-sold">
+                        400 sold
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="bottom-wrapper">
+            <Button class="btn-outline-Charcoal">Load more</Button>
+        </div>
+
+    </div>
+   
+    <div class="bg-Charcoal">
+        <div class="global-wrapper text-White">
+            <div class="ad-promo">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores earum qui, id voluptatibus corporis, sit enim quaerat quia exercitationem, adipisci doloribus pariatur! Quia voluptatum porro, adipisci voluptatem aspernatur pariatur recusandae!  
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="preview-wrapper">
         <div class="preview-1">
             <img src="./assets/img/ui-library/Landing.png" alt="Preview">
         </div>
-    </div>
-    
+    </div> -->
+
+
+
 </body>
+
 </html>

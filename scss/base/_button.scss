@@ -76,6 +76,7 @@ button {
 }
 
 .btn-outline-Charcoal-sm {
+  font-size: 12px;
   padding-left: $size-2;
   padding-right: $size-2;
   padding: 3px $size-3;
@@ -85,12 +86,13 @@ button {
   color: getColor(Charcoal);
 
   &:hover {
+    color: getColor(Cherry);
     border: 1px solid getColor(Cherry);
-    transition: all 0.3s ease;
+    transition: all 0.05s ease;
   }
   &:active {
     color: getColor(White);
-    background-color: shade( getColor(Cherry), 20),
+    background-color: getColor(Cherry);
   } 
 
 }
@@ -102,11 +104,13 @@ button {
     color: getColor(Charcoal);
 
     &:hover {
-      background-color: tint( getColor(Charcoal), 90);
+      background-color: tint( getColor(Charcoal), 10);
+      color: white;
       transition: all 0.3s ease;
     }
     &:active {
-      background-color: tint( getColor(Charcoal), 80),
+      background-color: shade( getColor(Charcoal), 30);
+      border: 1px solid shade( getColor(Charcoal), 30);
     } 
 
   }
@@ -219,3 +223,72 @@ button {
       color: tint( getColor(Mango), 15),
     } 
   }
+
+.btn-img {
+  margin: auto 0;
+  height: 18px;  
+  padding: auto;
+}
+
+.btn-img-sides {
+  fill: white;
+  margin: auto;
+  height: 40px;  
+  margin: auto;
+  padding-left: 24px;
+  display: flex;
+
+  .btn-badge {
+    color: white;
+    background-color: getColor(Cherry);
+    border: 2px solid white;
+    min-width: 23px;
+    height: 22px;
+    text-align: center;
+    font-weight: 500;
+
+    border-radius: 15px;
+   
+    padding: 2px 3px;
+    font-size: 12px;
+    
+    position: relative; /* Position the badge within the relatively positioned button */
+    // top:  0;
+    // right: 0;
+    right: 8px;
+    bottom: 5px;
+    
+    
+  }
+}
+
+.noti-badge {
+  color: white;
+  background-color: getColor(Cherry);
+  border: 2px solid white;
+  min-width: 240px;
+  height: 22px;
+  text-align: center;
+  
+  font-weight: 600;
+
+  border-radius: 15px;
+  padding: 2px 3px;
+  font-size: 11px;
+  
+  position: relative; /* Position the badge within the relatively positioned button */
+  // top:  0;
+  // right: 0;
+  right: 130px;
+  bottom: 8px;
+  
+  
+}
+
+.svg-search {
+  fill: white;
+  margin: auto 0;
+  height: 35px;  
+  margin: auto;
+  padding-left: 25px;
+}

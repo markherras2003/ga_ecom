@@ -29,11 +29,83 @@
         align-items: right;
         width: 50%;
         text-align: right;
-     
+        padding-bottom: 3px;
         
+        .dropbtn {
+            border: none;
+          }
+          
+          .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            text-align: left;
+            
+            span {
+                padding: 5px;
+                margin: auto;
+                font-weight: 700;
+            }
+
+            button {
+                font-size: 12px;
+                width: 100%;
+                margin: auto;
+                background-color: white;
+            }
+
+            .notification-product {
+                margin: auto;
+
+                a {
+                    color: getColor(Charcoal);
+                    padding: 6px 12px;
+                    text-decoration: none;
+                    display: flex;
+                    width: 400px;
+        
+                        img {
+                            height: 65px;
+                        }
+
+                        .noti-product-wrapper {
+                            width: 100%;
+                            text-align: left;
+                            padding: 2px 5px;
+                           
+
+                            .noti-tittle {
+                                font-weight: 500;
+                                font-size: 14px;
+                            }
+
+                            .noti-description {
+                                font-size: 12px;
+                                height: 45px;
+                                overflow: hidden;
+                            }
+                        }
+                }
+            }
+           
+          }
+          
+          .dropdown-content a:hover {background-color: getColor(Mango-100);}
+          
+          .dropdown:hover .dropdown-content {display: block;}
+          
+
         li{
             display: inline-block;
-            padding-left: $size-4;
+            padding-left: $size-2;
         }
 
     
@@ -89,17 +161,17 @@
             }
 
             .btn-search  {
+                fill: white;
                 margin: auto 0;
                 margin-bottom: 5px;;
                 padding: 0$size-1;
-                width: px;
+                width: 70px;
                 height: 36px;
                 background: getColor(Charcoal);
                 text-align: center;
                 border: 2px solid white;
-                color: #fff;
+                
                 cursor: pointer;
-                font-size: 20px;
             }
         }
         .categories {
@@ -124,4 +196,3 @@
         padding-bottom: $size-2;
     }
 }
-
